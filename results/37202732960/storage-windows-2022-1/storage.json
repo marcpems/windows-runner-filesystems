@@ -1,0 +1,312 @@
+{
+  "SchemaVersion": 1,
+  "TimestampUtc": "2026-10-04T12:37:22.7350113Z",
+  "RequestedLabel": "windows-2022",
+  "Sample": "1",
+  "RunUrl": "https://github.com/marcpems/windows-runner-filesystems/actions/runs/37202732960",
+  "Commit": "6bbbd32a1f893708f4f474427a62fa758ad97c7a",
+  "RunnerName": "GitHub Actions 1000000778",
+  "RunnerArchitecture": "X64",
+  "OSArchitecture": "X64",
+  "ProcessArchitecture": "X64",
+  "ImageOS": "win22",
+  "ImageVersion": "20260927.320.1",
+  "OS": {
+    "Caption": "Microsoft Windows Server 2022 Datacenter",
+    "Version": "10.0.20348",
+    "BuildNumber": "20348",
+    "OSArchitecture": "64-bit"
+  },
+  "Machine": {
+    "NumberOfLogicalProcessors": 4,
+    "TotalPhysicalMemory": 17174360064,
+    "Model": "Virtual Machine"
+  },
+  "Volumes": [
+    {
+      "DriveLetter": null,
+      "FileSystem": "NTFS",
+      "FileSystemType": "NTFS",
+      "FileSystemLabel": "Recovery",
+      "DriveType": "Fixed",
+      "HealthStatus": "Healthy",
+      "OperationalStatus": "OK",
+      "Size": 471855104,
+      "SizeRemaining": 454893568,
+      "AllocationUnitSize": 4096,
+      "Path": "\\\\?\\Volume{5f4bcfdf-df77-4e95-bd2b-9c52ad12145c}\\",
+      "UniqueId": "\\\\?\\Volume{5f4bcfdf-df77-4e95-bd2b-9c52ad12145c}\\"
+    },
+    {
+      "DriveLetter": null,
+      "FileSystem": "FAT32",
+      "FileSystemType": "FAT32",
+      "FileSystemLabel": "",
+      "DriveType": "Fixed",
+      "HealthStatus": "Healthy",
+      "OperationalStatus": "OK",
+      "Size": 99614720,
+      "SizeRemaining": 67964928,
+      "AllocationUnitSize": 512,
+      "Path": "\\\\?\\Volume{cee41571-a88e-4d53-a9de-6d358f94f0a3}\\",
+      "UniqueId": "\\\\?\\Volume{cee41571-a88e-4d53-a9de-6d358f94f0a3}\\"
+    },
+    {
+      "DriveLetter": "C",
+      "FileSystem": "NTFS",
+      "FileSystemType": "NTFS",
+      "FileSystemLabel": "Windows",
+      "DriveType": "Fixed",
+      "HealthStatus": "Healthy",
+      "OperationalStatus": "OK",
+      "Size": 274284392448,
+      "SizeRemaining": 88872054784,
+      "AllocationUnitSize": 4096,
+      "Path": "\\\\?\\Volume{53630787-93cf-48f6-a1df-1d3ece409d41}\\",
+      "UniqueId": "\\\\?\\Volume{53630787-93cf-48f6-a1df-1d3ece409d41}\\"
+    },
+    {
+      "DriveLetter": "D",
+      "FileSystem": "NTFS",
+      "FileSystemType": "NTFS",
+      "FileSystemLabel": "Temporary Storage",
+      "DriveType": "Fixed",
+      "HealthStatus": "Healthy",
+      "OperationalStatus": "OK",
+      "Size": 161059172352,
+      "SizeRemaining": 157853155328,
+      "AllocationUnitSize": 4096,
+      "Path": "\\\\?\\Volume{335cd4bc-0000-0000-0000-100000000000}\\",
+      "UniqueId": "\\\\?\\Volume{335cd4bc-0000-0000-0000-100000000000}\\"
+    }
+  ],
+  "Disks": [
+    {
+      "Number": 0,
+      "FriendlyName": "Msft Virtual Disk",
+      "BusType": "SAS",
+      "PartitionStyle": "GPT",
+      "Size": 274877906944,
+      "IsBoot": true,
+      "IsSystem": true,
+      "IsOffline": false,
+      "IsReadOnly": false
+    },
+    {
+      "Number": 1,
+      "FriendlyName": "Msft Virtual Disk",
+      "BusType": "SAS",
+      "PartitionStyle": "MBR",
+      "Size": 161061273600,
+      "IsBoot": false,
+      "IsSystem": false,
+      "IsOffline": false,
+      "IsReadOnly": false
+    }
+  ],
+  "Partitions": [
+    {
+      "DiskNumber": 0,
+      "PartitionNumber": 1,
+      "DriveLetter": "\u0000",
+      "Type": "Reserved",
+      "Size": 16777216,
+      "Offset": 1048576,
+      "IsBoot": false,
+      "IsSystem": false,
+      "IsHidden": true,
+      "AccessPaths": null
+    },
+    {
+      "DiskNumber": 0,
+      "PartitionNumber": 2,
+      "DriveLetter": "\u0000",
+      "Type": "Recovery",
+      "Size": 471859200,
+      "Offset": 17825792,
+      "IsBoot": false,
+      "IsSystem": false,
+      "IsHidden": true,
+      "AccessPaths": [
+        "\\\\?\\Volume{5f4bcfdf-df77-4e95-bd2b-9c52ad12145c}\\"
+      ]
+    },
+    {
+      "DiskNumber": 0,
+      "PartitionNumber": 3,
+      "DriveLetter": "\u0000",
+      "Type": "System",
+      "Size": 103809024,
+      "Offset": 489684992,
+      "IsBoot": false,
+      "IsSystem": true,
+      "IsHidden": true,
+      "AccessPaths": [
+        "\\\\?\\Volume{cee41571-a88e-4d53-a9de-6d358f94f0a3}\\"
+      ]
+    },
+    {
+      "DiskNumber": 0,
+      "PartitionNumber": 4,
+      "DriveLetter": "C",
+      "Type": "Basic",
+      "Size": 274284396032,
+      "Offset": 593494016,
+      "IsBoot": true,
+      "IsSystem": false,
+      "IsHidden": false,
+      "AccessPaths": [
+        "C:\\",
+        "\\\\?\\Volume{53630787-93cf-48f6-a1df-1d3ece409d41}\\"
+      ]
+    },
+    {
+      "DiskNumber": 1,
+      "PartitionNumber": 1,
+      "DriveLetter": "D",
+      "Type": "IFS",
+      "Size": 161059176448,
+      "Offset": 1048576,
+      "IsBoot": false,
+      "IsSystem": false,
+      "IsHidden": false,
+      "AccessPaths": [
+        "D:\\",
+        "\\\\?\\Volume{335cd4bc-0000-0000-0000-100000000000}\\"
+      ]
+    }
+  ],
+  "LogicalDisks": [
+    {
+      "DeviceID": "C:",
+      "DriveType": 3,
+      "FileSystem": "NTFS",
+      "VolumeName": "Windows",
+      "Size": 274284392448,
+      "FreeSpace": 88872054784
+    },
+    {
+      "DeviceID": "D:",
+      "DriveType": 3,
+      "FileSystem": "NTFS",
+      "VolumeName": "Temporary Storage",
+      "Size": 161059172352,
+      "FreeSpace": 157853155328
+    }
+  ],
+  "Paths": [
+    {
+      "Name": "GITHUB_WORKSPACE",
+      "Path": "D:\\a\\windows-runner-filesystems\\windows-runner-filesystems",
+      "DriveLetter": "D",
+      "FileSystem": "NTFS",
+      "VolumePath": "\\\\?\\Volume{335cd4bc-0000-0000-0000-100000000000}\\"
+    },
+    {
+      "Name": "RUNNER_TEMP",
+      "Path": "D:\\a\\_temp",
+      "DriveLetter": "D",
+      "FileSystem": "NTFS",
+      "VolumePath": "\\\\?\\Volume{335cd4bc-0000-0000-0000-100000000000}\\"
+    },
+    {
+      "Name": "RUNNER_TOOL_CACHE",
+      "Path": "C:\\hostedtoolcache\\windows",
+      "DriveLetter": "C",
+      "FileSystem": "NTFS",
+      "VolumePath": "\\\\?\\Volume{53630787-93cf-48f6-a1df-1d3ece409d41}\\"
+    },
+    {
+      "Name": "TEMP",
+      "Path": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp",
+      "DriveLetter": "C",
+      "FileSystem": "NTFS",
+      "VolumePath": "\\\\?\\Volume{53630787-93cf-48f6-a1df-1d3ece409d41}\\"
+    },
+    {
+      "Name": "USERPROFILE",
+      "Path": "C:\\Users\\runneradmin",
+      "DriveLetter": "C",
+      "FileSystem": "NTFS",
+      "VolumePath": "\\\\?\\Volume{53630787-93cf-48f6-a1df-1d3ece409d41}\\"
+    }
+  ],
+  "Fsutil": [
+    {
+      "Command": "fsutil.exe fsinfo drives",
+      "ExitCode": 0,
+      "Output": "Drives: C:\\ D:\\"
+    },
+    {
+      "Command": "fsutil.exe devdrv query",
+      "ExitCode": 1,
+      "Output": "devdrv is an invalid parameter.\r\n---- Commands Supported ----\r\n\r\n8dot3name       8dot3name management\r\nbehavior        Control file system behavior\r\ndax             Dax volume management\r\ndirty           Manage volume dirty bit\r\nfile            File specific commands\r\nfsInfo          File system information\r\nhardlink        Hardlink management\r\nobjectID        Object ID management\r\nquota           Quota management\r\nrepair          Self healing management\r\nreparsePoint    Reparse point management\r\nresource        Transactional Resource Manager management\r\nsparse          Sparse file control\r\ntiering         Storage tiering property management\r\ntransaction     Transaction management\r\nusn             USN management\r\nvolume          Volume management\r\nwim             Transparent wim hosting management"
+    },
+    {
+      "Command": "fsutil.exe fsinfo volumeinfo C:",
+      "ExitCode": 0,
+      "Output": "Volume Name : Windows\r\nVolume Serial Number : 0x64df7e00\r\nMax Component Length : 255\r\nFile System Name : NTFS\r\nIs ReadWrite\r\nIs Thinly-Provisioned\r\nSupports Case-sensitive filenames\r\nPreserves Case of filenames\r\nSupports Unicode in filenames\r\nPreserves & Enforces ACL's\r\nSupports file-based Compression\r\nSupports Disk Quotas\r\nSupports Sparse files\r\nSupports Reparse Points\r\nReturns Handle Close Result Information\r\nSupports POSIX-style Unlink and Rename\r\nSupports Object Identifiers\r\nSupports Encrypted File System\r\nSupports Named Streams\r\nSupports Transactions\r\nSupports Hard Links\r\nSupports Extended Attributes\r\nSupports Open By FileID\r\nSupports USN Journal"
+    },
+    {
+      "Command": "fsutil.exe fsinfo sectorinfo C:",
+      "ExitCode": 0,
+      "Output": "LogicalBytesPerSector :                                 512\r\nPhysicalBytesPerSectorForAtomicity :                    4096\r\nPhysicalBytesPerSectorForPerformance :                  4096\r\nFileSystemEffectivePhysicalBytesPerSectorForAtomicity : 4096\r\nDevice Alignment :                                      Aligned (0x000)\r\nPartition alignment on device :                         Aligned (0x000)\r\nPerforms Normal Seeks\r\nTrim Supported\r\nNot DAX capable\r\nIs Thinly-Provisioned, SlabSize :                       2,097,152 bytes (2.0 MB)"
+    },
+    {
+      "Command": "fsutil.exe fsinfo ntfsinfo C:",
+      "ExitCode": 0,
+      "Output": "NTFS Volume Serial Number :        0x8c64df9264df7e00\r\nNTFS Version      :                3.1\r\nLFS Version       :                2.0\r\nTotal Sectors     :                535,711,710  (255.4 GB)\r\nTotal Clusters    :                 66,963,963  (255.4 GB)\r\nFree Clusters     :                 21,702,431  ( 82.8 GB)\r\nTotal Reserved Clusters :                5,152  ( 20.1 MB)\r\nReserved For Storage Reserve :               0  (  0.0 KB)\r\nBytes Per Sector  :                512\r\nBytes Per Physical Sector :        4096\r\nBytes Per Cluster :                4096  (4 KB)\r\nBytes Per FileRecord Segment    :  1024\r\nClusters Per FileRecord Segment :  0\r\nMft Valid Data Length :            1.82 GB\r\nMft Start Lcn  :                   0x00000000000c0000\r\nMft2 Start Lcn :                   0x0000000000000002\r\nMft Zone Start :                   0x0000000002c4e360\r\nMft Zone End   :                   0x0000000002c55480\r\nMFT Zone Size  :                   113.13 MB\r\nMax Device Trim Extent Count :     4096\r\nMax Device Trim Byte Count :       0xffffffff\r\nMax Volume Trim Extent Count :     62\r\nMax Volume Trim Byte Count :       0x40000000\r\nResource Manager Identifier :      9CBB68C2-A98C-11F1-B614-002248471826"
+    },
+    {
+      "Command": "fsutil.exe devdrv query C:",
+      "ExitCode": 1,
+      "Output": "devdrv is an invalid parameter.\r\n---- Commands Supported ----\r\n\r\n8dot3name       8dot3name management\r\nbehavior        Control file system behavior\r\ndax             Dax volume management\r\ndirty           Manage volume dirty bit\r\nfile            File specific commands\r\nfsInfo          File system information\r\nhardlink        Hardlink management\r\nobjectID        Object ID management\r\nquota           Quota management\r\nrepair          Self healing management\r\nreparsePoint    Reparse point management\r\nresource        Transactional Resource Manager management\r\nsparse          Sparse file control\r\ntiering         Storage tiering property management\r\ntransaction     Transaction management\r\nusn             USN management\r\nvolume          Volume management\r\nwim             Transparent wim hosting management"
+    },
+    {
+      "Command": "fsutil.exe fsinfo volumeinfo D:",
+      "ExitCode": 0,
+      "Output": "Volume Name : Temporary Storage\r\nVolume Serial Number : 0xc06c6fe4\r\nMax Component Length : 255\r\nFile System Name : NTFS\r\nIs ReadWrite\r\nIs Thinly-Provisioned\r\nSupports Case-sensitive filenames\r\nPreserves Case of filenames\r\nSupports Unicode in filenames\r\nPreserves & Enforces ACL's\r\nSupports file-based Compression\r\nSupports Disk Quotas\r\nSupports Sparse files\r\nSupports Reparse Points\r\nReturns Handle Close Result Information\r\nSupports POSIX-style Unlink and Rename\r\nSupports Object Identifiers\r\nSupports Encrypted File System\r\nSupports Named Streams\r\nSupports Transactions\r\nSupports Hard Links\r\nSupports Extended Attributes\r\nSupports Open By FileID\r\nSupports USN Journal"
+    },
+    {
+      "Command": "fsutil.exe fsinfo sectorinfo D:",
+      "ExitCode": 0,
+      "Output": "LogicalBytesPerSector :                                 512\r\nPhysicalBytesPerSectorForAtomicity :                    4096\r\nPhysicalBytesPerSectorForPerformance :                  4096\r\nFileSystemEffectivePhysicalBytesPerSectorForAtomicity : 4096\r\nDevice Alignment :                                      Aligned (0x000)\r\nPartition alignment on device :                         Aligned (0x000)\r\nPerforms Normal Seeks\r\nTrim Supported\r\nNot DAX capable\r\nIs Thinly-Provisioned, SlabSize :                       2,097,152 bytes (2.0 MB)"
+    },
+    {
+      "Command": "fsutil.exe fsinfo ntfsinfo D:",
+      "ExitCode": 0,
+      "Output": "NTFS Volume Serial Number :        0x58c06c8ac06c6fe4\r\nNTFS Version      :                3.1\r\nLFS Version       :                2.0\r\nTotal Sectors     :                314,568,703  (150.0 GB)\r\nTotal Clusters    :                 39,321,087  (150.0 GB)\r\nFree Clusters     :                 38,539,392  (147.0 GB)\r\nTotal Reserved Clusters :                1,024  (  4.0 MB)\r\nReserved For Storage Reserve :               0  (  0.0 KB)\r\nBytes Per Sector  :                512\r\nBytes Per Physical Sector :        4096\r\nBytes Per Cluster :                4096  (4 KB)\r\nBytes Per FileRecord Segment    :  1024\r\nClusters Per FileRecord Segment :  0\r\nMft Valid Data Length :            768.00 KB\r\nMft Start Lcn  :                   0x00000000000c0000\r\nMft2 Start Lcn :                   0x0000000000000002\r\nMft Zone Start :                   0x00000000000c0040\r\nMft Zone End   :                   0x00000000000cc840\r\nMFT Zone Size  :                   200.00 MB\r\nMax Device Trim Extent Count :     4096\r\nMax Device Trim Byte Count :       0xffffffff\r\nMax Volume Trim Extent Count :     62\r\nMax Volume Trim Byte Count :       0x40000000\r\nResource Manager Identifier :      9647A468-BFEE-11F1-879E-C0D6D5BE3C18"
+    },
+    {
+      "Command": "fsutil.exe devdrv query D:",
+      "ExitCode": 1,
+      "Output": "devdrv is an invalid parameter.\r\n---- Commands Supported ----\r\n\r\n8dot3name       8dot3name management\r\nbehavior        Control file system behavior\r\ndax             Dax volume management\r\ndirty           Manage volume dirty bit\r\nfile            File specific commands\r\nfsInfo          File system information\r\nhardlink        Hardlink management\r\nobjectID        Object ID management\r\nquota           Quota management\r\nrepair          Self healing management\r\nreparsePoint    Reparse point management\r\nresource        Transactional Resource Manager management\r\nsparse          Sparse file control\r\ntiering         Storage tiering property management\r\ntransaction     Transaction management\r\nusn             USN management\r\nvolume          Volume management\r\nwim             Transparent wim hosting management"
+    }
+  ],
+  "FileIO": [
+    {
+      "Directory": "C:\\",
+      "Success": true,
+      "Bytes": 4096,
+      "Error": null
+    },
+    {
+      "Directory": "D:\\",
+      "Success": true,
+      "Bytes": 4096,
+      "Error": null
+    },
+    {
+      "Directory": "D:\\a\\windows-runner-filesystems\\windows-runner-filesystems",
+      "Success": true,
+      "Bytes": 4096,
+      "Error": null
+    },
+    {
+      "Directory": "D:\\a\\_temp",
+      "Success": true,
+      "Bytes": 4096,
+      "Error": null
+    }
+  ]
+}
