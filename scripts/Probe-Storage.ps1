@@ -146,8 +146,16 @@ foreach ($disk in $logicalDisks | Where-Object DriveType -eq 3) {
     if ($matching.Count -ne 1 -or $matching[0].FileSystem -ne $disk.FileSystem) {
         throw "Get-Volume and Win32_LogicalDisk disagree for $($disk.DeviceID)"
     }
+    $volumeInfo = @($fsutil | Where-Object Command -eq "fsutil.exe fsinfo volumeinfo $($disk.DeviceID)")
+    $filesystemPattern = '(?m)^File System Name\s*:\s*' + [regex]::Escape($disk.FileSystem) + '\s*$'
+    if ($volumeInfo.Count -ne 1 -or $volumeInfo[0].ExitCode -ne 0 -or
+        $volumeInfo[0].Output -notmatch $filesystemPattern) {
+        throw "fsutil did not confirm the filesystem for $($disk.DeviceID)"
+    }
 }
 $expectedArchitecture = if ($env:PROBE_IMAGE -like '*-arm') { 'Arm64' } else { 'X64' }
 if ($report.OSArchitecture -ne $expectedArchitecture) {
     throw "Expected $expectedArchitecture but observed $($report.OSArchitecture)"
 }
+# Actions otherwise propagates the last diagnostic fsutil exit code on Server 2022.
+exit 0
