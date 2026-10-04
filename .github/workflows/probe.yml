@@ -1,0 +1,44 @@
+name: Windows default filesystem probe
+
+on:
+  push:
+    paths:
+      - ".github/workflows/probe.yml"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    name: ${{ matrix.image }} / sample ${{ matrix.sample }}
+    runs-on: ${{ matrix.image }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        image:
+          - windows-2022
+          - windows-2025
+          - windows-2025-vs2026
+          - windows-latest
+          - windows-11-arm
+          - windows-11-vs2026-arm
+        sample: [1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect default storage and verify file IO
+        shell: pwsh
+        env:
+          PROBE_IMAGE: ${{ matrix.image }}
+          PROBE_SAMPLE: ${{ matrix.sample }}
+        run: .\scripts\Probe-Storage.ps1
+      - name: Preserve raw evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: storage-${{ matrix.image }}-${{ matrix.sample }}
+          path: evidence
+          if-no-files-found: error
+          retention-days: 90
